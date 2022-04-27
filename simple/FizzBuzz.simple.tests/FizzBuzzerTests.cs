@@ -79,11 +79,11 @@ public class FizzBuzzerTests
                                 "Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 " +
                                 "Buzz Fizz 97 98 Fizz Buzz";
         // Act
-        var action = range
+        var actual = range
             .Select(_sut.GetFizzBuzz)
             .Aggregate((s, s1) => s + " " + s1);
 
         // Assert
-        action.Should().BeEquivalentTo(expected);
+        actual.Should().BeEquivalentTo(expected);
     }
 }
