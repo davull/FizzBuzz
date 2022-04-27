@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.simple.lib", "simp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.simple.tests", "simple\FizzBuzz.simple.tests\FizzBuzz.simple.tests.csproj", "{8A36FE74-31F9-4132-8606-F6644712794B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commandhandler", "commandhandler", "{381F6859-4025-4DB6-92DF-BE7B33745963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.commandhandler.lib", "commandhandler\FizzBuzz.commandhandler.lib\FizzBuzz.commandhandler.lib.csproj", "{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.commandhandler.tests", "commandhandler\FizzBuzz.commandhandler.tests\FizzBuzz.commandhandler.tests.csproj", "{2F6BCC0F-953D-4A15-9631-87F536D4C1A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,19 @@ Global
 		{8A36FE74-31F9-4132-8606-F6644712794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A36FE74-31F9-4132-8606-F6644712794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A36FE74-31F9-4132-8606-F6644712794B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6BCC0F-953D-4A15-9631-87F536D4C1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6BCC0F-953D-4A15-9631-87F536D4C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6BCC0F-953D-4A15-9631-87F536D4C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6BCC0F-953D-4A15-9631-87F536D4C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{01285C61-D40B-421D-A1EB-6AB8FEA2E319} = {9A212792-3150-440A-90AC-D02E5D6D8DE3}
 		{8A36FE74-31F9-4132-8606-F6644712794B} = {9A212792-3150-440A-90AC-D02E5D6D8DE3}
+		{C59E8EF3-7FCC-486E-BF56-0E2C4B59AB18} = {381F6859-4025-4DB6-92DF-BE7B33745963}
+		{2F6BCC0F-953D-4A15-9631-87F536D4C1A9} = {381F6859-4025-4DB6-92DF-BE7B33745963}
 	EndGlobalSection
 EndGlobal
