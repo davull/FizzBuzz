@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "simple", "simple", "{9A212792-3150-440A-90AC-D02E5D6D8DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.simple.lib", "simple\FizzBuzz.simple.lib\FizzBuzz.simple.lib.csproj", "{01285C61-D40B-421D-A1EB-6AB8FEA2E319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.simple.tests", "simple\FizzBuzz.simple.tests\FizzBuzz.simple.tests.csproj", "{8A36FE74-31F9-4132-8606-F6644712794B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01285C61-D40B-421D-A1EB-6AB8FEA2E319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01285C61-D40B-421D-A1EB-6AB8FEA2E319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01285C61-D40B-421D-A1EB-6AB8FEA2E319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01285C61-D40B-421D-A1EB-6AB8FEA2E319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A36FE74-31F9-4132-8606-F6644712794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A36FE74-31F9-4132-8606-F6644712794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A36FE74-31F9-4132-8606-F6644712794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A36FE74-31F9-4132-8606-F6644712794B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01285C61-D40B-421D-A1EB-6AB8FEA2E319} = {9A212792-3150-440A-90AC-D02E5D6D8DE3}
+		{8A36FE74-31F9-4132-8606-F6644712794B} = {9A212792-3150-440A-90AC-D02E5D6D8DE3}
 	EndGlobalSection
 EndGlobal
