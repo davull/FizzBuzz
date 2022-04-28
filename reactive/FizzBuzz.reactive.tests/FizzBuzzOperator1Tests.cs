@@ -6,7 +6,7 @@ using Xunit.Abstractions;
 
 namespace FizzBuzz.reactive.tests;
 
-public class FizzBuzzObservableExtensionsTests
+public class FizzBuzzOperator1Tests
 {
     private const string Fizz = "Fizz";
     private const string Buzz = "Buzz";
@@ -14,7 +14,7 @@ public class FizzBuzzObservableExtensionsTests
 
     private readonly ITestOutputHelper _output;
 
-    public FizzBuzzObservableExtensionsTests(ITestOutputHelper output)
+    public FizzBuzzOperator1Tests(ITestOutputHelper output)
     {
         _output = output;
     }
@@ -89,7 +89,7 @@ public class FizzBuzzObservableExtensionsTests
         // Arrange
         var observable = Observable
             .Range(start: 1, count: 100)
-            .FizzBuzz()
+            .FizzBuzz1()
             .TestOutput(_output);
 
         const string expected = "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 " +
@@ -109,9 +109,8 @@ public class FizzBuzzObservableExtensionsTests
         actual.Should().BeEquivalentTo(expected);
     }
 
-
     private IObservable<string> CreateFizzBuzzObservable(int i) =>
         Observable.Return(i)
-            .FizzBuzz()
+            .FizzBuzz1()
             .TestOutput(_output);
 }
